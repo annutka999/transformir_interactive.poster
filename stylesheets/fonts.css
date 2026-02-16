@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'SevenExEight Pixel';
+  src:
+    url('../fonts/SevenExEightPixel-Regular.otf') format('otf'),
+    url('../fonts/SevenExEightPixel-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
