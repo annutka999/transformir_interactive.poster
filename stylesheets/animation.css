@@ -224,7 +224,7 @@
   }
 }
 
-@keyframes marquee {
+@keyframes marquee-2 {
   0% {
     transform: translateX(0);
   }
