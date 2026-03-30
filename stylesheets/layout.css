@@ -519,15 +519,35 @@ footer {
   animation: h 1s infinite steps(10);
 }
 .i {
-  animation: i 1s infinite steps(1);
+  animation: i 1s infinite steps(10);
 }
 
-.transformation-end {
+/* .transformation-end {
   display: flex;
   animation: run 30s infinite linear;
   &:hover {
     animation-play-state: paused;
   }
+} */
+
+.transformation-end {
+  overflow: hidden;
+  width: 100%;
+  background-color: #510051;
+  padding: 1vw;
+}
+.transformation-end:hover .marquee-text {
+  animation-play-state: paused;
+}
+
+.marquee-text {
+  display: inline-block;
+  padding-left: 100%;
+  padding: 2vw;
+  animation: marquee 20s linear infinite;
+  color: #fff;
+  font-size: 10.7vw;
+  white-space: nowrap;
 }
 
 .tv-section {
@@ -1302,7 +1322,6 @@ button[id^='submit-btn'] {
 }
 
 .hand-container {
-  display: flex;
   padding: 1vw;
   border: 0.119vw solid #cf00cf;
   width: 42vw;
@@ -1456,3 +1475,17 @@ button[id^='submit-btn'] {
 .cell:hover {
   background-color: white;
 }
+
+/* .scanner-line {
+  width: 105%;
+  height: 0.119vw;
+  background-color: #cf00cf;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 4s linear;
+} */
+
+/* .hand-2 {
+  overflow: hidden;
+} */
