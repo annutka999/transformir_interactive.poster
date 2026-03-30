@@ -1,0 +1,32 @@
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.screen-container {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body > section {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+footer {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.running-text img {
+  max-width: none;
+}

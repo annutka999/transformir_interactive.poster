@@ -3,9 +3,824 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Transformir_interactive poster</title>
+    <title>TRANSFORMIR</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="icon" href="images/favicon-2.ico" type="images/x-icon" />
+    <link rel="icon" href="images/favicon.png" type="images/png" />
     <script defer src="javascripts/scripts.js"></script>
   </head>
-  <body></body>
+
+  <body>
+    <!-- Первый экран -->
+    <div class="screen-container">
+      <section class="first-screen">
+        <div id="black-balls-container">
+          <div class="black-ball black-ball-1"></div>
+          <div class="black-ball black-ball-2"></div>
+          <div class="black-ball black-ball-3"></div>
+          <div class="black-ball black-ball-4"></div>
+          <div class="black-ball black-ball-5"></div>
+          <div class="black-ball black-ball-6"></div>
+          <div class="black-ball black-ball-7"></div>
+          <div class="black-ball black-ball-8"></div>
+          <div class="black-ball black-ball-9"></div>
+          <div class="black-ball black-ball-10"></div>
+          <div class="black-ball black-ball-11"></div>
+        </div>
+
+        <div id="number-circles-container">
+          <div class="pink-circles-container">
+            <div class="number-circle number-circle-1">1</div>
+            <div class="number-circle number-circle-2">2</div>
+            <div class="number-circle number-circle-3">3</div>
+
+            <div class="mini-pink-circles">
+              <img
+                src="images/circle-1.svg"
+                class="mini-pink-circles-1"
+                alt="круг 1"
+              />
+              <img
+                src="images/circle-2.svg"
+                class="mini-pink-circles-2"
+                alt="круг 2"
+              />
+              <img
+                src="images/circle-3.svg"
+                class="mini-pink-circles-3"
+                alt="круг 3"
+              />
+              <img
+                src="images/circle-4.svg"
+                class="mini-pink-circles-4"
+                alt="круг 4"
+              />
+              <img
+                src="images/circle-5.svg"
+                class="mini-pink-circles-5"
+                alt="круг 5"
+              />
+              <img
+                src="images/circle-6.svg"
+                class="mini-pink-circles-6"
+                alt="круг 6"
+              />
+              <img
+                src="images/circle-7.svg"
+                class="mini-pink-circles-7"
+                alt="круг 7"
+              />
+              <img
+                src="images/circle-8.svg"
+                class="mini-pink-circles-8"
+                alt="круг 8"
+              />
+              <img
+                src="images/circle-9.svg"
+                class="mini-pink-circles-9"
+                alt="круг 9"
+              />
+
+              <img
+                src="images/circle-10.svg"
+                class="mini-pink-circles-10"
+                alt="круг 10"
+              />
+              <img
+                src="images/circle-11.svg"
+                class="mini-pink-circles-11"
+                alt="круг 11"
+              />
+              <img
+                src="images/circle-12.svg"
+                class="mini-pink-circles-12"
+                alt="круг 12"
+              />
+              <img
+                src="images/circle-13.svg"
+                class="mini-pink-circles-13"
+                alt="круг 13"
+              />
+              <img
+                src="images/circle-14.svg"
+                class="mini-pink-circles-14"
+                alt="круг 14"
+              />
+              <img
+                src="images/circle-15.svg"
+                class="mini-pink-circles-15"
+                alt="круг 15"
+              />
+              <img
+                src="images/circle-16.svg"
+                class="mini-pink-circles-16"
+                alt="круг 16"
+              />
+              <img
+                src="images/circle-17.svg"
+                class="mini-pink-circles-17"
+                alt="круг 17"
+              />
+              <img
+                src="images/circle-18.svg"
+                class="mini-pink-circles-18"
+                alt="круг 18"
+              />
+            </div>
+            <div id="lines-container"></div>
+          </div>
+        </div>
+
+        <div class="system-messages">
+          <div class="msg-1">
+            ID: <br />
+            525A309
+          </div>
+          <div class="msg-2">
+            СТАТУС: ОК <br />СИСТЕМА: АКТИВНА <br />ЗАГРУЗКА...
+          </div>
+          <div class="msg-3">ЛОГ: <br />#01</div>
+          <div class="msg-4">
+            ВХОД: РАЗРЕШЕН <br />
+            СИНХРОНИЗАЦИЯ... <br />СВЯЗЬ: СТАБИЛЬНА
+          </div>
+          <div class="msg-5">
+            КЛЮЧ: <br />
+            5050
+          </div>
+          <div class="msg-6">ПОРТ: <br />80</div>
+          <div class="msg-7">
+            ОШИБОК: 0 <br />
+            ЯДРО: ЗАПУЩЕНО <br />ПОТОК: ОТКРЫТ
+          </div>
+          <div class="msg-8">
+            СЕТЬ: ЕСТЬ <br />
+            ПОИСК... <br />
+            ГОТОВНОСТЬ: 100%
+          </div>
+        </div>
+
+        <h1 class="title-1">TRANSFORMIR</h1>
+      </section>
+
+      <!-- Второй экран -->
+      <section class="second-screen">
+        <div class="left-part">
+          <div class="hand-container">
+            <div class="part-border">
+              <div class="hand-1" id="hand-1">
+                <div class="image-with-text">
+                  <img src="images/hand-1.svg" alt="рамка 1" />
+                </div>
+              </div>
+              <div class="hand-2" id="hand-2" style="display: none">
+                <img src="images/hand.svg" alt="ладонь" />
+              </div>
+            </div>
+
+            <!-- <video id="video-element" autoplay loop muted>
+              <source src="video/hand-form.mov" type="video/mov" />
+            </video> -->
+
+            <div class="button-container" style="display: none">
+              <button class="btn btn-1" id="btn-1">+</button>
+              <button class="btn btn-2" id="btn-2">+</button>
+              <button class="btn btn-3" id="btn-3">+</button>
+              <button class="btn btn-4" id="btn-4">+</button>
+            </div>
+            <div class="image-container" id="img-container-1">
+              <img src="images/frame-1.svg" alt="картинка 1" />
+            </div>
+            <div class="image-container" id="img-container-2">
+              <img src="images/frame-2.svg" alt="картинка 2" />
+            </div>
+            <div class="image-container" id="img-container-3">
+              <img src="images/frame-3.svg" alt="картинка 3" />
+            </div>
+            <div class="image-container" id="img-container-4">
+              <img src="images/frame-4.svg" alt="картинка 4" />
+            </div>
+          </div>
+
+          <div class="running-text" id="marquee">
+            <img src="images/pulse-run-stroke.svg" alt="сердцебиение" />
+          </div>
+        </div>
+
+        <div class="right-part">
+          <div class="grid-container">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="third-screen">
+        <div class="main-container-3">
+          <div class="left-section">
+            <div class="input-data-container">
+              <h2>Создай свою звезду</h2>
+              <div class="rectangle-container">
+                <div class="rectangle">
+                  <p>ВВЕДИТЕ СВОЁ ИМЯ</p>
+                  <div class="input-row">
+                    <input
+                      type="text"
+                      id="name-input"
+                      placeholder="ВВЕДИТЕ СВОЁ ИМЯ"
+                    />
+                    <button id="submit-btn">
+                      <img src="images/∠.svg" class="arrow" alt="галочка" />
+                    </button>
+                  </div>
+                </div>
+                <div class="rectangle">
+                  <p>ВВЕДИТЕ ДАТУ РОЖДЕНИЯ</p>
+                  <div class="input-row">
+                    <input
+                      type="date"
+                      id="birth-date-input"
+                      placeholder="ВВЕДИТЕ ДАТУ РОЖДЕНИЯ"
+                    />
+                    <button id="submit-btn">
+                      <img src="images/∠.svg" class="arrow" alt="галочка" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="star-main-wrapper">
+              <div class="star-frame-container">
+                <div class="star-selection-container">
+                  <div id="star-preview">
+                    <img
+                      src="images/star-frame.svg"
+                      alt="Просмотр звезды"
+                      class="frame-img"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="star-content-layer">
+                <h3>ВЫБЕРИТЕ ВИД</h3>
+                <!-- Слайдер  -->
+                <div class="star-slider-container">
+                  <button class="slider-btn prev-btn">
+                    <img src="images/1.svg" class="slide" alt="назад" />
+                  </button>
+                  <div class="star-slider">
+                    <img
+                      src="images/star-1.svg"
+                      class="star-slide"
+                      alt="Звезда 1"
+                    />
+                    <img
+                      src="images/star-2.svg"
+                      class="star-slide"
+                      alt="Звезда 2"
+                    />
+                    <img
+                      src="images/star-3.svg"
+                      class="star-slide"
+                      alt="Звезда 3"
+                    />
+                    <img
+                      src="images/star-4.svg"
+                      class="star-slide"
+                      alt="Звезда 4"
+                    />
+                    <img
+                      src="images/star-5.svg"
+                      class="star-slide"
+                      alt="Звезда 5"
+                    />
+                  </div>
+                  <button class="slider-btn next-btn">
+                    <img src="images/2.svg" class="slide" alt="вперёд" />
+                  </button>
+                </div>
+                <input type="text" id="star-name" placeholder="ИМЯ ЗВЕЗДЫ" />
+              </div>
+            </div>
+
+            <div class="rectangle-container-2">
+              <div class="characteristics-container">
+                <p>ХАРАКТЕРИСТИКИ</p>
+                <div class="calmness">
+                  <p>спокойствие</p>
+                  <div class="block-1">
+                    <div class="square" id="square1"></div>
+                    <div class="square" id="square2"></div>
+                    <div class="square" id="square3"></div>
+                    <div class="square" id="square4"></div>
+                    <div class="square" id="square5"></div>
+                    <div class="square" id="square6"></div>
+                    <div class="square" id="square7"></div>
+                    <div class="square" id="square8"></div>
+                    <div class="square" id="square9"></div>
+                    <div class="square" id="square10"></div>
+                    <div class="square" id="square11"></div>
+                    <div class="square" id="square12"></div>
+                  </div>
+                </div>
+                <div class="confidence">
+                  <p>уверенность</p>
+                  <div class="block-2">
+                    <div class="square" id="square13"></div>
+                    <div class="square" id="square14"></div>
+                    <div class="square" id="square15"></div>
+                    <div class="square" id="square16"></div>
+                    <div class="square" id="square17"></div>
+                    <div class="square" id="square18"></div>
+                    <div class="square" id="square19"></div>
+                    <div class="square" id="square20"></div>
+                    <div class="square" id="square21"></div>
+                    <div class="square" id="square22"></div>
+                    <div class="square" id="square23"></div>
+                    <div class="square" id="square24"></div>
+                  </div>
+                </div>
+                <div class="stability">
+                  <p>стабильность</p>
+                  <div class="block-3">
+                    <div class="square" id="square25"></div>
+                    <div class="square" id="square26"></div>
+                    <div class="square" id="square27"></div>
+                    <div class="square" id="square28"></div>
+                    <div class="square" id="square29"></div>
+                    <div class="square" id="square30"></div>
+                    <div class="square" id="square31"></div>
+                    <div class="square" id="square32"></div>
+                    <div class="square" id="square33"></div>
+                    <div class="square" id="square34"></div>
+                    <div class="square" id="square35"></div>
+                    <div class="square" id="square36"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Блок выбора цвета звезды -->
+              <div class="container-right">
+                <div class="color-picker-container">
+                  <p>ЦВЕТ</p>
+                  <div class="color-container">
+                    <div
+                      class="color-sample color-sample-1"
+                      data-color="pink"
+                    ></div>
+                    <div
+                      class="color-sample color-sample-2"
+                      data-color="green"
+                    ></div>
+                    <div
+                      class="color-sample color-sample-3"
+                      data-color="blue"
+                    ></div>
+                    <div
+                      class="color-sample color-sample-4"
+                      data-color="purple"
+                    ></div>
+                  </div>
+                </div>
+                <button id="ready-btn">ГОТОВО</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-section">
+            <div class="top-animation-container">
+              <img
+                src="images/top-animation-1.svg"
+                alt="Кадр 1"
+                class="animation-frame"
+              />
+              <img
+                src="images/top-animation-2.svg"
+                alt="Кадр 2"
+                class="animation-frame"
+              />
+              <img
+                src="images/top-animation-3.svg"
+                alt="Кадр 3"
+                class="animation-frame"
+              />
+              <img
+                src="images/top-animation-4.svg"
+                alt="Кадр 4"
+                class="animation-frame"
+              />
+              <img
+                src="images/top-animation-5.svg"
+                alt="Кадр 5"
+                class="animation-frame"
+              />
+              <img
+                src="images/top-animation-6.svg"
+                alt="Кадр 6"
+                class="animation-frame"
+              />
+              <img
+                src="images/top-animation-7.svg"
+                alt="Кадр 7"
+                class="animation-frame"
+              />
+              <img
+                src="images/top-animation-8.svg"
+                alt="Кадр 8"
+                class="animation-frame"
+              />
+              <img
+                src="images/top-animation-9.svg"
+                alt="Кадр 9"
+                class="animation-frame"
+              />
+              <img
+                src="images/top-animation-10.svg"
+                alt="Кадр 10"
+                class="animation-frame"
+              />
+              <img
+                src="images/top-animation-11.svg"
+                alt="Кадр 11"
+                class="animation-frame"
+              />
+              <img
+                src="images/top-animation-12.svg"
+                alt="Кадр 12"
+                class="animation-frame"
+              />
+            </div>
+            <div class="sudoku-container">
+              <div class="sudoku-grid">
+                <img
+                  src="images/sudoko-frame.svg"
+                  alt="судоко"
+                  class="sudoku-frame"
+                />
+              </div>
+
+              <div class="drag-item item">%</div>
+              <div class="drag-item item">%</div>
+              <div class="drag-item item">%</div>
+              <div class="drag-item item">@</div>
+              <div class="drag-item item">@</div>
+              <div class="drag-item item">@</div>
+              <div class="drag-item item">#</div>
+              <div class="drag-item item">#</div>
+              <div class="drag-item item">#</div>
+              <div class="drag-item item">*</div>
+              <div class="drag-item item">*</div>
+              <div class="drag-item item">*</div>
+              <div class="drag-item item">*</div>
+              <div class="drag-item item">$</div>
+              <div class="drag-item item">$</div>
+              <div class="drag-item item"><</div>
+              <div class="drag-item item"><</div>
+            </div>
+            <div class="bottom-section">
+              <h2>Редактирование базовой матрицы</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fourth-screen">
+        <div class="tv-section">
+          <div class="tv" data-tv="1">
+            <img
+              src="images/tv-1.1.svg"
+              alt="Телевизор 1.1"
+              class="tv-image-1 tv-image"
+            />
+          </div>
+          <div class="tv" data-tv="2">
+            <img
+              src="images/tv-2.1.svg"
+              alt="Телевизор 2.1"
+              class="tv-image-2 tv-image"
+            />
+          </div>
+          <div class="tv" data-tv="3">
+            <img
+              src="images/tv-3.1.svg"
+              alt="Телевизор 3.1"
+              class="tv-image-3 tv-image"
+            />
+          </div>
+          <div class="tv" data-tv="4">
+            <img
+              src="images/tv-4.1.svg"
+              alt="Телевизор 4.1"
+              class="tv-image-4 tv-image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <div class="ticket-reality-btn-row">
+        <button
+          type="button"
+          id="download-cert-btn"
+          class="ticket-reality-btn"
+          aria-label="Скачать сертификат (CERTIFICATE.svg)"
+        >
+          <span class="ticket-reality-btn_text">БИЛЕТ В НОВУЮ РЕАЛЬНОСТЬ</span>
+          <div class="ticket-reality-btn_icon-wrap">
+            <img src="images/arrow-end.svg" alt="стрелка" />
+          </div>
+        </button>
+      </div>
+
+      <div id="final-animation-container">
+        <div id="running-text"></div>
+        <div id="frame-animation"></div>
+      </div>
+    </div>
+
+    <section>
+      <div class="transformation-end">
+        <div class="letter_wrap">
+          <div class="t"></div>
+        </div>
+        <div class="letter_wrap">
+          <div class="r"></div>
+        </div>
+        <div class="letter_wrap">
+          <div class="a"></div>
+        </div>
+        <div class="letter_wrap">
+          <div class="n"></div>
+        </div>
+        <div class="letter_wrap">
+          <div class="s"></div>
+        </div>
+        <div class="letter_wrap">
+          <div class="f"></div>
+        </div>
+        <div class="letter_wrap">
+          <div class="o"></div>
+        </div>
+        <div class="letter_wrap">
+          <div class="r"></div>
+        </div>
+        <div class="letter_wrap">
+          <div class="m"></div>
+        </div>
+        <div class="letter_wrap">
+          <div class="a"></div>
+        </div>
+        <div class="letter_wrap">
+          <div class="c"></div>
+        </div>
+        <div class="letter_wrap">
+          <div class="i"></div>
+        </div>
+        <div class="letter_wrap">
+          <div class="aa"></div>
+        </div>
+        <div class="letter_wrap">
+          <div class="z"></div>
+        </div>
+        <div class="letter_wrap">
+          <div class="a"></div>
+        </div>
+        <div class="letter_wrap">
+          <div class="v"></div>
+        </div>
+        <div class="letter_wrap">
+          <div class="e"></div>
+        </div>
+        <div class="letter_wrap">
+          <div class="r"></div>
+        </div>
+        <div class="letter_wrap">
+          <div class="h"></div>
+        </div>
+        <div class="letter_wrap">
+          <div class="e"></div>
+        </div>
+        <div class="letter_wrap">
+          <div class="n"></div>
+        </div>
+        <div class="letter_wrap">
+          <div class="a"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="rectangle-container-end">
+          <div class="rectangle-mini"><p>КОСМАЧЁВА АННА Б25ДЗ09</p></div>
+          <div class="rectangle-mini"><p>HSE ART AND DESIGN SCHOOL</p></div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
